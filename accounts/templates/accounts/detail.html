@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block container %}
+
+<h2>USER DETAIL PAGE</h2>
+{{ user.pk }}
+<br>
+{{ user.username }}
+<br>
+{{ followers }}
+{% endblock container %}

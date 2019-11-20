@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}{% endblock  %}</title>
+</head>
+<body>
+  <header>
+    <h1>JUNES MOVIE</h1>
+    <p>
+      <span>Hello, {{ user.username }}</span>
+      <a href="{% url 'accounts:login' %}">[로그인]</a>
+      <a href="{% url 'accounts:signup' %}">[회원가입]</a>
+      <a href="{% url 'accounts:logout' %}">[로그아웃]</a>
+    </p>
+  </header>
+
+  {% block container %}
+  {% endblock container %}
+  
+</body>
+</html>

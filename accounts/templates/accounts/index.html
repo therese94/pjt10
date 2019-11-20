@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block container %}
+
+<h2>MAIN PAGE</h2>
+{% for user in users %}
+<div>
+  <h3>{{ user.pk }}. {{ user.username }}</h3>
+</div>
+{% endfor %}
+{% endblock container %}
